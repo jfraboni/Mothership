@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" version="3">
+  <includeClasses>
+    <classEntry path="com.mothership.abstract.command.ICommand"/>
+    <classEntry path="com.mothership.controller.Controller"/>
+    <classEntry path="com.mothership.utlil.PrivateClassEnforcer"/>
+    <classEntry path="com.mothership.Communicator"/>
+    <classEntry path="com.mothership.controller.message.MessageType"/>
+    <classEntry path="com.mothership.controller.message.Message"/>
+    <classEntry path="com.mothership.display.CommunicatorSprite"/>
+    <classEntry path="com.mothership.abstract.ICommunicator"/>
+    <classEntry path="com.mothership.controller.command.AbstractSimpleCommand"/>
+    <classEntry path="com.mothership.controller.command.AbstractOnMessageCommand"/>
+    <classEntry path="com.mothership.controller.command.IOnMessageCommand"/>
+    <classEntry path="com.mothership.display.CommunicatorMovieClip"/>
+    <classEntry path="com.mothership.controller.message.agnostic.ViewMessages"/>
+    <classEntry path="com.mothership.controller.message.agnostic.DataMessages"/>
+    <classEntry path="com.mothership.utlil.Identification"/>
+    <classEntry path="com.mothership.controller.message.agnostic.AgnosticMessages"/>
+    <classEntry path="com.mothership.controller.message.IntendedReceiverMessage"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

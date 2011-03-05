@@ -1,0 +1,9 @@
+Welcome to the Mothership wiki!
+
+Mothership is a simple object oriented message/event communication and modular application framework being developed in Actionscript 3.
+
+The basis of the framework is object communication: simple, flexible and powerful!
+
+The aim is decoupled object communication with extreme ease of use. Out of the box, there is absolutely no boiler-plate code! The basic object, the workhorse of the Mothership framework, is the Communicator Object. A developer can begin using the Communicator by simply extending it or instantiating one, defining messages it can send, and or registering functions or commands to handle its own messages or the messages of other Communicator objects. Done!
+
+As we are in the beginning stages of migrating the framework to github, please check back often for updates!
