@@ -18,6 +18,8 @@
     <classEntry path="com.mothership.utlil.Identification"/>
     <classEntry path="com.mothership.controller.message.agnostic.AgnosticMessages"/>
     <classEntry path="com.mothership.controller.message.IntendedReceiverMessage"/>
+    <classEntry path="com.mothership.abstract.ISender"/>
+    <classEntry path="com.mothership.abstract.IReceiver"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
