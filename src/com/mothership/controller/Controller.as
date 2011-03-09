@@ -4,7 +4,7 @@ package com.mothership.controller
 	import com.mothership.abstract.command.ICommand;
 	import com.mothership.controller.message.Message;
 	import com.mothership.controller.message.MessageType;
-	import com.mothership.utlil.PrivateClassEnforcer;
+	import com.mothership.util.PrivateClassEnforcer;
 	
 	import flash.errors.IllegalOperationError;
 	import flash.utils.Dictionary;
@@ -235,6 +235,22 @@ package com.mothership.controller
 		public function getMessageTypesByCommunicatorId(communicatorId:String):Vector.<MessageType>
 		{
 			return ICommunicator(_mapIdToCommunicator[communicatorId]).getMessageTypes() || null;
+		}
+		
+		public function getMessageTypeByName(messageTypeName:String, messageTypes:Vector.<MessageType>):MessageType
+		{
+			if (messageTypes)
+			{
+				for (var i:int = 0; i < messageTypes.length; i++)
+				{
+					if (messageTypes[i].messageTypeName == messageTypeName)
+						return messageTypes[i];
+				}
+				// TODO: LOG no messageType found on this communicator object for messageTypeName of messageTypeName //
+				return null;
+			}
+			// TODO: LOG no messageType found on this communicator object for messageTypeName of messageTypeName //
+			return null;
 		}
 
 	}

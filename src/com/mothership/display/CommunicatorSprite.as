@@ -4,7 +4,7 @@ package com.mothership.display
 	import com.mothership.abstract.ICommunicator;
 	import com.mothership.controller.message.Message;
 	import com.mothership.controller.message.MessageType;
-	import com.mothership.utlil.Identification;
+	import com.mothership.util.Identification;
 	
 	import flash.display.Sprite;
 	import flash.errors.IllegalOperationError;
@@ -13,15 +13,10 @@ package com.mothership.display
 	{
 		private var _communicator:Communicator;
 		
-		public function CommunicatorSprite(exposeMessageTypes:Boolean = false, id:String = null)
+		public function CommunicatorSprite(identification:Identification = null)
 		{
-			_communicator = new Communicator(exposeMessageTypes, id);
-			
-			// set the getMessageTypesOverride of the _communicator object to the CommunicatorSprite.getMessageTypes()
-			_communicator.getMessageTypesOverride = getMessageTypes;
+			_communicator = new Communicator(identification);
 		}
-		
-		
 		
 		public function registerOnMessageHandler(messageType:MessageType, onEventHandler:Function):MessageType
 		{
@@ -76,7 +71,7 @@ package com.mothership.display
 		
 		public function getMessageTypeByName(messageTypeName:String):MessageType
 		{
-			return _communicator.getMessageTypeByName(messageTypeName);
+			return _communicator.controller.getMessageTypeByName(messageTypeName, getMessageTypes());
 		}
 		
 		public function get identification():Identification

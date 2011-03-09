@@ -1,14 +1,15 @@
 package com.mothership.controller.command
 {
 	import com.mothership.controller.message.Message;
+	import com.mothership.util.Identification;
 
 	public class AbstractOnMessageCommand extends AbstractSimpleCommand implements IOnMessageCommand
 	{
 		private var _message		:Message;
 		
-		public function AbstractOnMessageCommand(commandName:String, message:Message)
+		public function AbstractOnMessageCommand(identification:Identification, message:Message)
 		{
-			super(commandName);
+			super(identification);
 			
 			//TODO: use abstract enforcer //
 			

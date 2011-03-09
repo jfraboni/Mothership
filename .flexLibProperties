@@ -3,7 +3,7 @@
   <includeClasses>
     <classEntry path="com.mothership.abstract.command.ICommand"/>
     <classEntry path="com.mothership.controller.Controller"/>
-    <classEntry path="com.mothership.utlil.PrivateClassEnforcer"/>
+    <classEntry path="com.mothership.util.PrivateClassEnforcer"/>
     <classEntry path="com.mothership.Communicator"/>
     <classEntry path="com.mothership.controller.message.MessageType"/>
     <classEntry path="com.mothership.controller.message.Message"/>
@@ -15,11 +15,16 @@
     <classEntry path="com.mothership.display.CommunicatorMovieClip"/>
     <classEntry path="com.mothership.controller.message.agnostic.ViewMessages"/>
     <classEntry path="com.mothership.controller.message.agnostic.DataMessages"/>
-    <classEntry path="com.mothership.utlil.Identification"/>
+    <classEntry path="com.mothership.util.Identification"/>
     <classEntry path="com.mothership.controller.message.agnostic.AgnosticMessages"/>
     <classEntry path="com.mothership.controller.message.IntendedReceiverMessage"/>
     <classEntry path="com.mothership.abstract.ISender"/>
     <classEntry path="com.mothership.abstract.IReceiver"/>
+    <classEntry path="com.mothership.Sender"/>
+    <classEntry path="com.mothership.Receiver"/>
+    <classEntry path="com.mothership.util.OneTimeSetPropertyProxy"/>
+    <classEntry path="com.mothership.abstract.IIdentifiable"/>
+    <classEntry path="com.mothership.Mother"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
