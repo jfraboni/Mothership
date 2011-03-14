@@ -24,7 +24,7 @@ package com.mothership
 		 * 
 		 * @param identification
 		 */
-		public function Communicator(identification:Identification = null) //, exposeMessageTypes:Boolean = false, id:String = null
+		public function Communicator(identification:Identification = null)
 		{
 			super(identification);
 		}
